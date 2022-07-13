@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============== font google ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Prompt:wght@100;200;300;400;500&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- ============== font google ============= -->
+
+    <!-- ============== css ============== -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ============== css ============== -->
+
+    <title></title>
+  </head>
+  <body>
+    <div id="load" class="pre_load flex">
+      <div class="loader flex">
+        <h2>loading...</h2>
+      </div>
+      <span></span>
+    </div>
+    <div class="main flex">
+      <div class="navigasi flex">
+        <nav class="flex">
+          <div class="logo-name">
+            <h2>YADI</h2>
+          </div>
+          <div class="setting flex">
+            <ul class="nav-menu slide flex">
+              <li>
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#package">Package</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="mode flex">
+              <input type="checkbox" name="input-mode" id="input-mode" />
+              <ion-icon class="icon-day" name="sunny-outline"></ion-icon>
+              <ion-icon class="icon-night d-none" name="moon-outline"></ion-icon>
+            </div>
+            <div class="menu flex">
+              <input type="checkbox" name="input-menu" id="input-menu" />
+              <ion-icon class="icon-on" name="grid-outline"></ion-icon>
+              <ion-icon class="icon-off d-none" name="close-outline"></ion-icon>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section id="home" class="container home flex">
+        <div class="box-home flex">
+          <div class="con-text-home flex show">
+            <div class="heading-text-home">
+              <h2 class="hello">Hello</h2>
+              <h2 class="nama"><span>H</span>i, I<span>M</span> Handika Putra</h2>
+            </div>
+            <div class="profesion ">
+              <h3>front end developer</h3>
+            </div>
+            <div class="con-p">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iste dolorem nesciunt rem sapiente aspernatur inventore iusto odio. Eligendi, natus. Excepturi libero quod numquam animi.</p>
+            </div>
+            <div class="social-media flex">
+              <a class="box-social-media flex" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+              <a class="box-social-media flex" href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              <a class="box-social-media flex" href=""><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+          </div>
+          <div class="con-profile flex">
+            <img class="pefect-bawah" src="img-asset/Tak berjudul1_20220702160401.png" alt="profile" />
+            <div class="con-img flex"><img src="img/profile/IMG20211108110025_00.jpg" alt="profile" /></div>
+            <img class="pefect-atas" src="img-asset/Tak berjudul1_20220702160340.png" alt="profile" />
+          </div>
+        </div>
+      </section>
+      <section id="package" class="container package flex">
+        <span></span>
+        <span></span>
+        <span></span>
+        <header><h2>Package info</h2></header>
+        <div class="con-card flex">
+          <div class="box-card flex">
+            <div class="card flex show">
+              <div id="card1" class="card-dalam">
+                <div class="page flex">
+                  <div class="type-pack">
+                    <h3>Reguler</h3>
+                  </div>
+                  <div class="foto-card"></div>
+                  <div class="feature flex">
+                    <ul>
+                      <li><ion-icon name="close-circle-outline"></ion-icon>menu editor text</li>
+                      <li><ion-icon name="close-circle-outline"></ion-icon>set-online (only code text)</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>2x revisi</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>custom ui 1 section</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>responsive</li>
+                    </ul>
+                    <button onclick="flip()" type="button" id="1" class="btncard1 flex">
+                      <ion-icon name="play-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page page2 flex">
+                  <button type="button" onclick="flip()" id="1" class="btncard2 flex">
+                    <ion-icon name="play-back-outline"></ion-icon>
+                  </button>
+                  <div class="page2opt flex">
+                    <h3>reguler 5$</h3>
+                    <a href="">view example</a>
+                    <a href="">live view web</a>
+                    <div class="order flex">
+                      <h5>order now</h5>
+                      <a href="" class="order-icon flex">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card flex show">
+              <div id="card2" class="card-dalam">
+                <div class="page flex">
+                  <div class="type-pack">
+                    <h3>Medium</h3>
+                  </div>
+                  <div class="foto-card"></div>
+                  <div class="feature flex">
+                    <ul>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>menu editor text</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>set-online (only code text)[optional]</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>2x revisi</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>custom ui 2 section</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>responsive</li>
+                    </ul>
+                    <button onclick="flip2()" type="button" id="2" class="btncard1 flex">
+                      <ion-icon name="play-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page page2 flex">
+                  <button type="button" onclick="flip2()" id="2" class="btncard2 flex">
+                    <ion-icon name="play-back-outline"></ion-icon>
+                  </button>
+                  <div class="page2opt flex">
+                    <h3>Medium 12$</h3>
+                    <a href="">view example</a>
+                    <a href="">live view web</a>
+                    <div class="order flex">
+                      <h5>order now</h5>
+                      <a href="" class="order-icon flex">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card flex show">
+              <div id="card3" class="card-dalam">
+                <div class="page flex">
+                  <div class="type-pack">
+                    <h3>premium</h3>
+                  </div>
+                  <div class="foto-card"></div>
+                  <div class="feature flex">
+                    <ul>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>menu editor text</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>set-online (only code text)[optional]</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>5x revisi</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>custom ui 5 section</li>
+                      <li><ion-icon name="checkmark-circle-outline"></ion-icon>responsive</li>
+                    </ul>
+                    <button onclick="flip3()" type="button" id="3" class="btncard1 flex">
+                      <ion-icon name="play-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="page page2 flex">
+                  <button type="button" onclick="flip3()" id="3" class="btncard2 flex">
+                    <ion-icon name="play-back-outline"></ion-icon>
+                  </button>
+                  <div class="page2opt flex">
+                    <h3>Premium 20$</h3>
+                    <a href="">view example</a>
+                    <a href="">live view web</a>
+                    <div class="order flex">
+                      <h5>order now</h5>
+                      <a href="" class="order-icon flex">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          <div class="feature_img_edit flex d-none">
+                  <button onclick="try_close()" type="button"><ion-icon name="close-outline"></ion-icon></button>
+                  <img id="try_close" src="img/pack/p1.png" alt="">
+                </div>
+      <section id="project" class="container project flex">
+        <div class="box-project flex">
+          <div class="span-effect-project flex">
+            <span></span>
+            <span></span>
+          
+          </div>
+          <header>
+             
+            <div class="box-try_feature flex">
+              <div class="try_feature flex">
+                <div class="feature_btn flex">
+                  <button onclick="trySummon()" id="try_summon" type="button">Edit feature</button>
+                </div>
+           
+                <p>easy edit some text on your website</p>
+              </div>
+            </div>
+            <div class="box_better-project flex">
+              <div class="better_project flex">
+                <div class="title_project flex">
+                <h3>premium</h3>
+
+                </div>
+                <div class="con_card_project">
+                  <div class="box-premium">
+                    <div class="card_premium"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_standart-project flex">
+              <div class="standart_project flex">
+                <div class="title_project flex">
+                  <h3>medium</h3>
+                </div>
+                <div class="con_card_project">
+                  <div class="box_project">
+                    <div class="card_project"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_simple-project flex">
+              <div class="simple_project flex">
+                <div class="title_project flex">
+                  <h3>basic</h3>
+                </div>
+                <div class="con_card_project">
+                  <div class="box_project">
+                    <div class="card_project"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </section>
+       <section id="contact" class="container contact flex">
+        <div class="box-contact flex">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <h2 class="tag">Contact Me</h2>
+          <div class="contact-dalam flex">
+            <form name="submit-to-google-sheet" action="" method="post">
+              <ul>
+                <li><label for="nama">nama :</label><input type="text" name="nama" id="nama" required></li>
+                <li><label for="email">email  :</label><input type="email" name="email" id="email" required></li>
+                <li><label for="pesan">Mail  :</label><textarea name="pesan" id="pesan" cols="30" rows="10" required></textarea></li>
+                <li><button class="button-submit" type="submit">Send</button></li>
+              </ul>
+            </form>
+            
+            <h2 class="notive notive-processing d-none">sending message...</h2>
+          </div>
+        </div>
+       </section>
+    </div>
+
+    <!-- * ====================================  script icon ================================  * -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- * ====================================  script icon ================================  * -->
+    <!-- * ====================================== main  js  =================================  * -->
+    <script src="main.js"></script>
+    <!-- * ====================================== main  js  =================================  * -->
+  </body>
+</html>
